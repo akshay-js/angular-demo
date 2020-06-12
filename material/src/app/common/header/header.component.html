@@ -1,0 +1,7 @@
+<mat-toolbar>
+    <mat-toolbar-row>
+        <span>Demo App</span>
+        <span class="example-spacer"></span>
+        <a class="example-icon"  *ngIf="(isLoggedIn | async)" mat-raised-button color="warn" routerLinkActive="list-item-active" (click)="logout()">Logout</a>
+    </mat-toolbar-row>
+</mat-toolbar>
